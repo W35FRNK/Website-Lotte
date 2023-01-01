@@ -1,0 +1,12 @@
+.grid_container {
+    display: grid;
+    margin: 2rem 2rem;
+    background-color: var(--prim1);
+    row-gap: .5rem;
+}
+
+.content {
+    color: var(--sec1);
+    border: #333 solid 1px;
+
+}
