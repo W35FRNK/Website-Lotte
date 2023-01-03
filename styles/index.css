@@ -1,12 +1,45 @@
 .grid_container {
     display: grid;
-    margin: 2rem 2rem;
-    background-color: var(--prim1);
-    row-gap: .5rem;
+    margin: 1rem 1 rem;
+    row-gap: 2rem;
+    
+    min-width: 30% ;
 }
 
 .content {
     color: var(--sec1);
     border: #333 solid 1px;
+    background-color: var(--prim1);
+    padding: 1rem 1rem;
 
 }
+
+
+.content__quote {
+    display: grid;
+    background-color: aquamarine;
+    gap: 5rem;
+    align-items:center;
+    grid-template-areas:
+    'l q q q q'  ;
+   
+}
+
+.logo_new {
+    
+    height: 12rem;
+    border-radius: 6rem;
+    grid-area: l;
+}
+
+#quote-text {
+    font-weight: bold;
+    font-size: 2rem;
+    vertical-align: middle;
+    grid-area: q;
+}
+
+
+
+
+
