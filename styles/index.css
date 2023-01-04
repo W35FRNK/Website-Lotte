@@ -1,27 +1,31 @@
 .grid_container {
     display: grid;
-    margin: 1rem 1 rem;
-    row-gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    row-gap: 1rem;
+    width: auto;
+    overflow: hidden;
     
-    min-width: 30% ;
 }
 
 .content {
     color: var(--sec1);
-    border: #333 solid 1px;
-    background-color: var(--prim1);
+    /* border: #333 solid 1px;
+    background-color: var(--prim1); */
     padding: 1rem 1rem;
+    display: flex;
 
 }
 
 
 .content__quote {
     display: grid;
-    background-color: aquamarine;
     gap: 5rem;
     align-items:center;
     grid-template-areas:
-    'l q q q q'  ;
+    'l q q q q q'  ;
    
 }
 
@@ -37,6 +41,24 @@
     font-size: 2rem;
     vertical-align: middle;
     grid-area: q;
+}
+
+@media (max-width: 625px) {
+.content__quote {
+    display: grid;
+    grid-template-areas:
+    '. . l l . .'
+    'q q q q q q';
+    align-items: center;
+    justify-content: center;
+    row-gap: .5rem;
+}
+
+#quote-text {
+    text-align: center;
+}
+
+
 }
 
 
