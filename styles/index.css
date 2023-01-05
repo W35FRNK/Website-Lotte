@@ -1,23 +1,29 @@
 .grid_container {
     display: grid;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
-    margin-left: .5rem;
+    margin-top: 5rem;
+        margin-left: .5rem;
     margin-right: .5rem;
-    row-gap: 1rem;
-    width: auto;
-    overflow: hidden;
+    row-gap: 4.5rem;
+    
     
 }
 
 .content {
+   
     color: var(--sec1);
     /* border: #333 solid 1px;
     background-color: var(--prim1); */
     padding: 1rem 1rem;
-    display: flex;
-
+    
+    
 }
+
+.content > p {
+    line-height: 1.5rem;
+    
+}
+
+
 
 
 .content__quote {
@@ -37,8 +43,11 @@
 }
 
 #quote-text {
+    display: flex;
+    flex-wrap: wrap;
     font-weight: bold;
     font-size: 2rem;
+    justify-content: center;
     vertical-align: middle;
     grid-area: q;
 }
@@ -57,9 +66,56 @@
 #quote-text {
     text-align: center;
 }
+}
 
+
+@media (min-width: 626px) {
+    .grid_container {
+        max-width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        justify-content: center;
+        align-items: center;
+    }
+    .content__quote {
+        display: grid;
+        grid-template-areas:
+        '. . l l . .'
+        'q q q q q q';
+        align-items: center;
+        justify-content: center;
+        row-gap: .5rem;
+    }
+    #quote-text {
+        text-align: center;
+    }
 
 }
+
+@media (min-width: 1080px) {
+    .content__quote {
+        display: grid;
+        grid-template-areas:
+        'l q q q q q';
+        align-items: center;
+        justify-content: center;
+        row-gap: .5rem;
+    }
+    
+    #quote-text {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1280px) {
+    .grid_container {
+        max-width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+
 
 
 
