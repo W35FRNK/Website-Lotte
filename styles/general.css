@@ -38,8 +38,10 @@ footer {
     'fp . . fs fs . '
     'fc fc fc fc fc fc';
     gap: .5rem;
-    margin-inline: .5rem;
     margin-top: 9rem;
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 
  }
 
@@ -71,7 +73,7 @@ footer {
  }
 
 
- @media (max-width: 400px) {
+ @media (max-width: 420px) {
     footer {
         display: grid;
         row-gap: 1.5rem;
