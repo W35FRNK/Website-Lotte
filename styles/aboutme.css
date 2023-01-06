@@ -3,64 +3,53 @@
     grid-template-columns: 5fr 2fr;
     margin-top: 5rem;
     position: relative;
-    
-
+    gap: 4rem;
 }
 
 .aboutme_text {
-    
-    background-color: aqua;
     padding: 1rem 1rem;
     display: flex;
-    
-    
-
 }
 
 .aboutme_photo {
-    background-color: lightpink;
     padding: 1rem 1rem;
     justify-content: center;
-    align-items: flex-start;
-    
     display: flex;
-    
-    
-
-    
-    
-  
-    
+    align-items: flex-start;
 }    
 
 .foto_lotte {
-    
-    width: 180px;
-    border-radius: 90px;
-    position: fixed; 
-    
-    
-    
-    
-    
-    
+    width: 220px;
+    border-radius: 110px;
+    margin-top: 1rem;
+    position: sticky; 
+    top: 0;
     
 }
 
 
+@media (max-width: 375px) {
+    .foto_lotte {
+        width: 100px;
+        border-radius: 50px;
+    }
+
+    .aboutme_container {
+        gap: 0;
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .aboutme_container {
+    width: 100%;
+    gap: 0;
+    }
+    }
 
    
         
-@media (min-width: 626px) {
-    .aboutme_container {
-        max-width: 60%;
-        margin-left: 20%;
-        margin-right: 20%;
-        
-    }
-    
 
-}
 
 
 

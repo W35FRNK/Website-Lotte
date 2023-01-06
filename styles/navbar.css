@@ -12,7 +12,9 @@
   #name {
     margin: .75rem 0;
    }
+
   
+
   .nav > .nav-header {
     display: inline;
     
@@ -81,6 +83,7 @@
       width: 25px;
       height: 10px;
       border-top: 2px solid #eee;
+      
     }
     .nav > .nav-links {
       position: absolute;

@@ -52,10 +52,14 @@ footer {
 
  }
 
- footer > .footer_links_pages > li::marker > a {
-    text-decoration: none;
-    color: var (--sec1);
+ footer > .footer_links_pages > li > a, 
+ footer > .footer_links_pages > li > a::link,
+ footer > .footer_links_pages > li > a::visited,
+ footer > .footer_links_pages > li > a::active {
+        color: var (--sec1);
  }
+
+ 
 
  footer > .footer_links_socials > ul {
     margin: 0;
@@ -64,6 +68,7 @@ footer {
 
  .footer_links_socials {
     grid-area: fs;
+    
 
  }
 
