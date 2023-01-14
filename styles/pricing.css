@@ -1,0 +1,51 @@
+.container_pricing {
+    margin-top: 5rem;
+
+    
+}
+
+.pricing_card {
+    
+    margin: 2.5rem;
+    flex: 1;
+}
+
+.nazorg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--prim3);
+    
+}
+
+
+.flower_long {
+    max-width: 18rem;
+    height: auto;
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+@media (max-width: 1280px) {
+    .container_pricing {
+    width: 100%;
+    gap: 0;
+    }
+    }
+
+   
+        
+
+
+
+
+@media (min-width: 1280px) {
+    .container_pricing {
+        max-width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}

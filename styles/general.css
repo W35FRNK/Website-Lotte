@@ -7,9 +7,9 @@ body {
 }
 
 :root {
-    --prim1: #fac461;
-    --prim2: #959763;  
-    --prim3: #f1f3e5;
+    --prim1: #767a4c;
+    --prim2: hsl(62, 22%, 46%);  
+    --prim3: #FFD600;
     --sec1: #333;
     --sec2: #ffffff;
     }
@@ -33,7 +33,7 @@ footer {
     position:static;
     display: grid;
     bottom: 0;
-    background-color: var(--prim3);
+    background-color: var(--prim2);
     grid-template-areas: 
     'fp . . fs fs . '
     'fc fc fc fc fc fc';
