@@ -1,6 +1,6 @@
   .nav {
     height: 50px;
-    background-color: var(--prim2) ;
+    background-color: var(--prim1) ;
     position: relative;
     justify-content: space-between;
   }
@@ -19,6 +19,12 @@
     display: inline;
     
     
+  }
+
+  .logo_navbar {
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 2.5px;
   }
 
   
